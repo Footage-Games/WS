@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-lastest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: install dependencies
+    - run: |
+      sudo apt-install haxe
+      
+    
